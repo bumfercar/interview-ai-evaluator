@@ -127,6 +127,49 @@ data:
 
 이 폴더가 이후 평가/추론 백엔드에서 사용할 LoRA adapter다.
 
+## 10. 학습 결과 평가
+
+학습이 끝나면 test 데이터 200개로 자동 평가한다.
+
+작게 먼저 확인:
+
+```bash
+!python scripts/07_evaluate.py \
+  --adapter /content/drive/MyDrive/AI/models/lora_adapters/qwen2_5_7b_sft \
+  --test data/splits/test.jsonl \
+  --output data/eval/sft_predictions_sample.jsonl \
+  --limit 20
+```
+
+전체 test 평가:
+
+```bash
+!python scripts/07_evaluate.py \
+  --adapter /content/drive/MyDrive/AI/models/lora_adapters/qwen2_5_7b_sft \
+  --test data/splits/test.jsonl \
+  --output data/eval/sft_predictions.jsonl
+```
+
+확인할 핵심 지표:
+
+```text
+json_parse_success
+score_mae
+exact_score_accuracy
+score_band_accuracy
+pearson
+```
+
+좋은 신호 예시:
+
+```text
+json_parse_success가 높다
+score_mae가 낮다
+score_band_accuracy가 높다
+```
+
+주의: loss가 내려가도 JSON 출력이 깨지면 실제 서비스에는 쓰기 어렵다. 그래서 학습 후에는 반드시 `07_evaluate.py`로 test 평가를 확인한다.
+
 ## GitHub에 올릴 것
 
 ```text
