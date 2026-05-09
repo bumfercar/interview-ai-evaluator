@@ -287,6 +287,8 @@ def run_training(config: dict[str, Any]) -> None:
         training_args_kwargs["max_length"] = int(model_cfg["max_seq_length"])
     if "packing" in sft_config_params:
         training_args_kwargs["packing"] = False
+    if "padding_free" in sft_config_params:
+        training_args_kwargs["padding_free"] = False
 
     sft_args = {
         key: value for key, value in training_args_kwargs.items() if key in sft_config_params
