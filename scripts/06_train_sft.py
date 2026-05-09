@@ -214,7 +214,7 @@ def run_training(config: dict[str, Any]) -> None:
         from unsloth.chat_templates import train_on_responses_only
         from datasets import Dataset
         from transformers import TrainingArguments, set_seed
-        from trl import SFTTrainer
+        from trl import SFTConfig, SFTTrainer
     except ImportError as exc:
         raise SystemExit(
             "학습 의존성이 설치되어 있지 않습니다. Colab/GPU 환경에서 pyproject.toml의 학습 의존성을 설치한 뒤 실행하세요.\n"
@@ -277,18 +277,41 @@ def run_training(config: dict[str, Any]) -> None:
     training_args_params = inspect.signature(TrainingArguments.__init__).parameters
     strategy_key = "eval_strategy" if "eval_strategy" in training_args_params else "evaluation_strategy"
     training_args_kwargs[strategy_key] = "steps"
-    args = TrainingArguments(**training_args_kwargs)
 
-    trainer = SFTTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        train_dataset=train_dataset,
-        eval_dataset=val_dataset,
-        dataset_text_field=data_cfg["text_field"],
-        max_seq_length=int(model_cfg["max_seq_length"]),
-        packing=False,
-        args=args,
-    )
+    sft_config_params = inspect.signature(SFTConfig.__init__).parameters
+    if "dataset_text_field" in sft_config_params:
+        training_args_kwargs["dataset_text_field"] = data_cfg["text_field"]
+    if "max_seq_length" in sft_config_params:
+        training_args_kwargs["max_seq_length"] = int(model_cfg["max_seq_length"])
+    elif "max_length" in sft_config_params:
+        training_args_kwargs["max_length"] = int(model_cfg["max_seq_length"])
+    if "packing" in sft_config_params:
+        training_args_kwargs["packing"] = False
+
+    sft_args = {
+        key: value for key, value in training_args_kwargs.items() if key in sft_config_params
+    }
+    args = SFTConfig(**sft_args)
+
+    trainer_kwargs = {
+        "model": model,
+        "train_dataset": train_dataset,
+        "eval_dataset": val_dataset,
+        "args": args,
+    }
+    trainer_params = inspect.signature(SFTTrainer.__init__).parameters
+    if "processing_class" in trainer_params:
+        trainer_kwargs["processing_class"] = tokenizer
+    else:
+        trainer_kwargs["tokenizer"] = tokenizer
+    if "dataset_text_field" in trainer_params:
+        trainer_kwargs["dataset_text_field"] = data_cfg["text_field"]
+    if "max_seq_length" in trainer_params:
+        trainer_kwargs["max_seq_length"] = int(model_cfg["max_seq_length"])
+    if "packing" in trainer_params:
+        trainer_kwargs["packing"] = False
+
+    trainer = SFTTrainer(**trainer_kwargs)
 
     trainer = train_on_responses_only(
         trainer,
