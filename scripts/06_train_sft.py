@@ -51,7 +51,7 @@ DEFAULT_CONFIG_DICT: dict[str, Any] = {
     "lora": {
         "r": 16,
         "alpha": 16,
-        "dropout": 0.05,
+        "dropout": 0.0,
         "bias": "none",
         "target_modules": [
             "q_proj",
@@ -62,7 +62,7 @@ DEFAULT_CONFIG_DICT: dict[str, Any] = {
             "up_proj",
             "down_proj",
         ],
-        "use_gradient_checkpointing": True,
+        "use_gradient_checkpointing": "unsloth",
         "random_state": 42,
     },
     "training": {
@@ -208,11 +208,12 @@ def print_dry_run(train_rows: list[dict[str, Any]], val_rows: list[dict[str, Any
 
 def run_training(config: dict[str, Any]) -> None:
     try:
+        import unsloth  # noqa: F401  # Unsloth must patch before transformers/trl/peft imports.
+        from unsloth import FastLanguageModel
+        from unsloth.chat_templates import train_on_responses_only
         from datasets import Dataset
         from transformers import TrainingArguments, set_seed
         from trl import SFTTrainer
-        from unsloth import FastLanguageModel
-        from unsloth.chat_templates import train_on_responses_only
     except ImportError as exc:
         raise SystemExit(
             "학습 의존성이 설치되어 있지 않습니다. Colab/GPU 환경에서 pyproject.toml의 학습 의존성을 설치한 뒤 실행하세요.\n"
@@ -244,7 +245,7 @@ def run_training(config: dict[str, Any]) -> None:
         lora_alpha=int(lora_cfg["alpha"]),
         lora_dropout=float(lora_cfg["dropout"]),
         bias=lora_cfg["bias"],
-        use_gradient_checkpointing=bool(lora_cfg["use_gradient_checkpointing"]),
+        use_gradient_checkpointing=lora_cfg["use_gradient_checkpointing"],
         random_state=int(lora_cfg["random_state"]),
     )
 
