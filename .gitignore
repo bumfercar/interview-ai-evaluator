@@ -1,0 +1,59 @@
+# 환경 변수 / 시크릿
+.env
+.env.*
+!.env.example
+
+# 데이터
+# 현재 합성 데이터는 Colab 재현을 위해 GitHub에 포함한다.
+# 단, 대용량/민감/운영 데이터가 생기면 아래 패턴으로 제외한다.
+data/mentor_exports/
+data/production/
+data/private/
+data/**/*.parquet
+data/**/*.arrow
+data/**/*.sqlite
+data/**/*.db
+
+# 모델 가중치
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+adapter_model.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs / experiment tracking
+wandb/
+runs/
+logs/
+*.log
+
+# Local scratch files
+seedT
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

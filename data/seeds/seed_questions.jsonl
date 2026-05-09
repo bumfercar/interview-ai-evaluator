@@ -1,0 +1,202 @@
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/tcp", "question": "TCP 3-way handshake 과정에 대해 설명하고, 왜 이 과정이 필요한지 말해주세요.", "id": "seed_0001"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/index", "question": "데이터베이스 인덱스는 왜 사용하는지 설명하고, 인덱스를 과도하게 사용할 경우 어떤 문제가 생길 수 있는지 말해주세요.", "id": "seed_0002"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/process-thread", "question": "프로세스와 스레드의 차이를 설명하고, 웹 서버에서 스레드를 사용하는 이유를 말해주세요.", "id": "seed_0003"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "spring/transaction", "question": "트랜잭션이 무엇인지 설명하고, Spring에서 트랜잭션을 어떻게 관리하는지 말해주세요.", "id": "seed_0004"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "api/rest", "question": "REST API와 GraphQL의 차이를 설명하고 각각의 장단점을 말해주세요.", "id": "seed_0005"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/normalization", "question": "데이터베이스 정규화가 무엇인지 설명하고, 정규화를 지나치게 적용했을 때의 단점을 말해주세요.", "id": "seed_0006"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/code-review", "question": "코드 리뷰 과정에서 본인의 코드에 대해 강한 피드백을 받은 상황을 어떻게 대응할지 설명해주세요.", "id": "seed_0007"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "troubleshooting/service-failure", "question": "배포 이후 서비스 장애가 발생했을 때 어떤 순서로 문제를 해결할지 설명해주세요.", "id": "seed_0008"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/http", "question": "HTTP와 HTTPS의 차이를 설명하고 HTTPS가 필요한 이유를 말해주세요.", "id": "seed_0009"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "cache/redis", "question": "Redis를 사용하는 이유와, 캐시를 사용할 때 주의해야 할 점을 설명해주세요.", "id": "seed_0010"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/rendering", "question": "브라우저 렌더링 과정에 대해 설명해주세요.", "id": "seed_0011"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "react/state", "question": "React에서 state와 props의 차이를 설명해주세요.", "id": "seed_0012"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "javascript/event-loop", "question": "JavaScript의 이벤트 루프(Event Loop)에 대해 설명해주세요.", "id": "seed_0013"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "web/performance", "question": "웹 페이지 로딩 속도가 느릴 때 어떤 방식으로 성능을 개선할 수 있는지 설명해주세요.", "id": "seed_0014"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "web/cors", "question": "CORS가 무엇인지 설명하고 왜 필요한지 말해주세요.", "id": "seed_0015"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "react/hooks", "question": "React Hook을 사용하는 이유와 useEffect 사용 시 주의할 점을 설명해주세요.", "id": "seed_0016"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/design", "question": "디자이너와 개발 방향에 대한 의견 충돌이 발생했을 때 어떻게 해결할지 설명해주세요.", "id": "seed_0017"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "accessibility/user-experience", "question": "접근성을 고려한 프론트엔드 개발이 왜 중요한지 설명해주세요.", "id": "seed_0018"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "typescript", "question": "TypeScript를 사용하는 이유와 JavaScript 대비 장점을 설명해주세요.", "id": "seed_0019"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "react/reconciliation", "question": "React의 Virtual DOM이 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0020"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/overfitting", "question": "오버피팅(Overfitting)이 무엇인지 설명하고 이를 방지하는 방법을 말해주세요.", "id": "seed_0021"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/fine-tuning", "question": "파인튜닝(Fine-tuning)과 프롬프트 엔지니어링의 차이를 설명해주세요.", "id": "seed_0022"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "deep-learning/activation", "question": "활성화 함수(Activation Function)가 필요한 이유를 설명해주세요.", "id": "seed_0023"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/bias-variance", "question": "Bias-Variance Tradeoff에 대해 설명해주세요.", "id": "seed_0024"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/rag", "question": "RAG(Retrieval-Augmented Generation)가 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0025"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "ml/evaluation", "question": "정확도(Accuracy)만으로 모델을 평가하면 안 되는 이유를 설명해주세요.", "id": "seed_0026"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "ai/ethics", "question": "AI 모델이 편향된 결과를 생성했을 때 어떻게 대응해야 한다고 생각하는지 설명해주세요.", "id": "seed_0027"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/communication", "question": "비개발 직군에게 머신러닝 모델의 결과를 설명해야 할 때 어떤 방식으로 소통할지 설명해주세요.", "id": "seed_0028"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "transformer/attention", "question": "Transformer의 Attention 메커니즘이 무엇인지 설명해주세요.", "id": "seed_0029"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "data/preprocessing", "question": "머신러닝에서 데이터 전처리가 중요한 이유를 설명해주세요.", "id": "seed_0030"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "linux/process", "question": "Linux에서 프로세스를 확인하고 관리하는 기본적인 방법을 설명해주세요.", "id": "seed_0031"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "docker/container", "question": "Docker 컨테이너와 가상머신(VM)의 차이를 설명해주세요.", "id": "seed_0032"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "kubernetes/pod", "question": "Kubernetes에서 Pod가 무엇인지 설명해주세요.", "id": "seed_0033"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "ci-cd", "question": "CI/CD 파이프라인이 필요한 이유를 설명해주세요.", "id": "seed_0034"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/load-balancer", "question": "로드 밸런서(Load Balancer)의 역할을 설명해주세요.", "id": "seed_0035"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "cloud/scalability", "question": "클라우드 환경에서 Auto Scaling이 필요한 이유를 설명해주세요.", "id": "seed_0036"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "incident-response", "question": "새벽 시간에 서비스 장애 알림을 받았을 때 어떻게 대응할지 설명해주세요.", "id": "seed_0037"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "automation/collaboration", "question": "반복적인 운영 작업을 자동화해야 한다고 생각하는 이유를 설명해주세요.", "id": "seed_0038"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "monitoring/logging", "question": "모니터링과 로깅 시스템이 왜 중요한지 설명해주세요.", "id": "seed_0039"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "docker/image-layer", "question": "Docker 이미지 레이어 구조가 무엇이며 어떤 장점이 있는지 설명해주세요.", "id": "seed_0040"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/transaction-isolation", "question": "트랜잭션 격리 수준(Transaction Isolation Level)에 대해 설명해주세요.", "id": "seed_0041"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/deadlock", "question": "데드락(Deadlock)이 무엇인지 설명하고 해결 방법을 말해주세요.", "id": "seed_0042"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/seo", "question": "SEO를 고려한 프론트엔드 개발 방법을 설명해주세요.", "id": "seed_0043"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "javascript/closure", "question": "JavaScript의 클로저(Closure)에 대해 설명해주세요.", "id": "seed_0044"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/hallucination", "question": "LLM Hallucination이 무엇이며 이를 줄이기 위한 방법을 설명해주세요.", "id": "seed_0045"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/classification-regression", "question": "분류(Classification)와 회귀(Regression)의 차이를 설명해주세요.", "id": "seed_0046"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "infra/iac", "question": "Infrastructure as Code(IaC)가 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0047"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/dns", "question": "DNS가 동작하는 과정을 설명해주세요.", "id": "seed_0048"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/technical-decision", "question": "팀 내에서 기술 스택 선택 의견이 갈렸을 때 어떻게 의사결정을 진행할지 설명해주세요.", "id": "seed_0049"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "frontend/debugging", "question": "운영 환경에서만 발생하는 프론트엔드 버그를 어떻게 분석하고 해결할지 설명해주세요.", "id": "seed_0050"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/join", "question": "INNER JOIN과 LEFT OUTER JOIN의 차이를 설명하고 각각 어떤 상황에서 사용하는지 말해주세요.", "id": "seed_0051"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/socket", "question": "소켓(Socket)이 무엇인지 설명하고 서버-클라이언트 통신에서 어떤 역할을 하는지 말해주세요.", "id": "seed_0052"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "spring/security", "question": "Spring Security를 사용하는 이유와 인증(Authentication)과 인가(Authorization)의 차이를 설명해주세요.", "id": "seed_0053"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "orm/jpa", "question": "JPA를 사용하는 이유와 N+1 문제가 무엇인지 설명해주세요.", "id": "seed_0054"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/memory", "question": "힙(Heap)과 스택(Stack) 메모리 영역의 차이를 설명해주세요.", "id": "seed_0055"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "api/idempotency", "question": "멱등성(Idempotency)이 무엇이며 REST API 설계에서 왜 중요한지 설명해주세요.", "id": "seed_0056"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/replication", "question": "Master-Slave replication 구조를 사용하는 이유를 설명해주세요.", "id": "seed_0057"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/legacy-code", "question": "레거시 코드가 많은 프로젝트에 투입되었을 때 어떤 방식으로 코드를 파악하고 개선할지 설명해주세요.", "id": "seed_0058"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "message-queue/kafka", "question": "Kafka와 같은 메시지 큐를 사용하는 이유를 설명해주세요.", "id": "seed_0059"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/session-cookie", "question": "세션(Session)과 쿠키(Cookie)의 차이를 설명해주세요.", "id": "seed_0060"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "react/context-api", "question": "React Context API를 사용하는 이유와 Redux와의 차이를 설명해주세요.", "id": "seed_0061"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/code-splitting", "question": "Code Splitting이 무엇이며 왜 필요한지 설명해주세요.", "id": "seed_0062"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/reflow-repaint", "question": "Reflow와 Repaint의 차이를 설명해주세요.", "id": "seed_0063"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "nextjs/ssr", "question": "SSR(Server Side Rendering)과 CSR(Client Side Rendering)의 차이를 설명해주세요.", "id": "seed_0064"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "javascript/hoisting", "question": "JavaScript의 Hoisting에 대해 설명해주세요.", "id": "seed_0065"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/state-management", "question": "프론트엔드 상태 관리가 필요한 이유를 설명해주세요.", "id": "seed_0066"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/code-review", "question": "코드 리뷰 과정에서 리뷰어와 의견이 맞지 않을 때 어떻게 대응할지 설명해주세요.", "id": "seed_0067"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "websocket/realtime", "question": "WebSocket이 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0068"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "web/storage", "question": "LocalStorage와 SessionStorage의 차이를 설명해주세요.", "id": "seed_0069"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/testing", "question": "프론트엔드 테스트가 필요한 이유와 어떤 종류의 테스트가 있는지 설명해주세요.", "id": "seed_0070"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/tokenization", "question": "토큰(Tokenization)이 무엇이며 LLM에서 왜 중요한지 설명해주세요.", "id": "seed_0071"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "deep-learning/loss-function", "question": "Loss Function이 무엇이며 모델 학습에서 어떤 역할을 하는지 설명해주세요.", "id": "seed_0072"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/precision-recall", "question": "Precision과 Recall의 차이를 설명해주세요.", "id": "seed_0073"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "ml/feature-engineering", "question": "Feature Engineering이 무엇이며 왜 중요한지 설명해주세요.", "id": "seed_0074"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/embedding", "question": "Embedding이 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0075"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/model-failure", "question": "운영 중인 AI 모델의 성능이 갑자기 떨어졌을 때 어떤 방식으로 원인을 분석할지 설명해주세요.", "id": "seed_0076"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "deep-learning/cnn", "question": "CNN(Convolutional Neural Network)이 무엇이며 어떤 분야에서 주로 사용하는지 설명해주세요.", "id": "seed_0077"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/train-val-test", "question": "Train / Validation / Test 데이터셋을 나누는 이유를 설명해주세요.", "id": "seed_0078"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/few-shot", "question": "Few-shot Prompting이 무엇인지 설명해주세요.", "id": "seed_0079"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "communication/business", "question": "비즈니스 요구사항과 모델 성능 목표가 충돌할 때 어떻게 의사결정을 할지 설명해주세요.", "id": "seed_0080"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "docker/dockerfile", "question": "Dockerfile을 작성할 때 이미지 크기를 줄이기 위한 방법을 설명해주세요.", "id": "seed_0081"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "linux/file-permission", "question": "Linux 파일 권한 구조와 chmod 명령어에 대해 설명해주세요.", "id": "seed_0082"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "kubernetes/service", "question": "Kubernetes Service가 무엇이며 왜 필요한지 설명해주세요.", "id": "seed_0083"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "cloud/high-availability", "question": "고가용성(High Availability)을 고려한 시스템 설계 방법을 설명해주세요.", "id": "seed_0084"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/tcp-udp", "question": "TCP와 UDP의 차이를 설명하고 각각 어떤 상황에서 사용하는지 말해주세요.", "id": "seed_0085"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "monitoring/prometheus", "question": "Prometheus와 Grafana를 사용하는 이유를 설명해주세요.", "id": "seed_0086"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/documentation", "question": "운영 문서화가 왜 중요하다고 생각하는지 설명해주세요.", "id": "seed_0087"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "infra/blue-green", "question": "Blue-Green Deployment가 무엇이며 어떤 장점이 있는지 설명해주세요.", "id": "seed_0088"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/firewall", "question": "방화벽(Firewall)의 역할을 설명해주세요.", "id": "seed_0089"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "cloud/cdn", "question": "CDN(Content Delivery Network)을 사용하는 이유를 설명해주세요.", "id": "seed_0090"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "java/jvm", "question": "JVM의 구조와 Garbage Collection에 대해 설명해주세요.", "id": "seed_0091"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/acid", "question": "데이터베이스의 ACID 특성에 대해 설명해주세요.", "id": "seed_0092"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "spring/bean", "question": "Spring Bean의 생명주기(Lifecycle)에 대해 설명해주세요.", "id": "seed_0093"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/refactoring", "question": "기능 개발 일정이 촉박한 상황에서 리팩토링이 필요하다고 판단되면 어떻게 행동할지 설명해주세요.", "id": "seed_0094"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/responsive", "question": "반응형 웹 디자인이 필요한 이유를 설명해주세요.", "id": "seed_0095"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "javascript/prototype", "question": "JavaScript의 Prototype 기반 상속에 대해 설명해주세요.", "id": "seed_0096"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/memoization", "question": "Memoization이 무엇이며 React에서 어떻게 활용할 수 있는지 설명해주세요.", "id": "seed_0097"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/deadline", "question": "프로젝트 마감 기한이 촉박한 상황에서 품질과 일정 사이의 균형을 어떻게 맞출지 설명해주세요.", "id": "seed_0098"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/rag-vs-finetuning", "question": "RAG와 Fine-tuning의 차이를 설명하고 각각 어떤 상황에 적합한지 말해주세요.", "id": "seed_0099"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/confusion-matrix", "question": "Confusion Matrix가 무엇이며 어떤 정보를 얻을 수 있는지 설명해주세요.", "id": "seed_0100"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "ml/model-deployment", "question": "머신러닝 모델을 실제 서비스에 배포할 때 고려해야 할 요소를 설명해주세요.", "id": "seed_0101"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "ai/data-quality", "question": "데이터 품질이 좋지 않은 상황에서 어떻게 학습 데이터를 개선할지 설명해주세요.", "id": "seed_0102"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "kubernetes/deployment", "question": "Kubernetes Deployment가 무엇이며 어떤 역할을 하는지 설명해주세요.", "id": "seed_0103"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "linux/systemd", "question": "systemd가 무엇이며 Linux 환경에서 어떤 역할을 하는지 설명해주세요.", "id": "seed_0104"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "infra/rolling-update", "question": "Rolling Update 방식의 배포 전략에 대해 설명해주세요.", "id": "seed_0105"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "algorithm/time-complexity", "question": "시간 복잡도(Time Complexity)가 무엇이며 왜 중요한지 설명해주세요.", "id": "seed_0106"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "architecture/microservice", "question": "모놀리식 아키텍처와 마이크로서비스 아키텍처의 차이를 설명해주세요.", "id": "seed_0107"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/connection-pool", "question": "DB Connection Pool을 사용하는 이유를 설명해주세요.", "id": "seed_0108"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/knowledge-sharing", "question": "팀 내 기술 공유 문화가 왜 중요하다고 생각하는지 설명해주세요.", "id": "seed_0109"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "react/rendering-optimization", "question": "React 애플리케이션에서 불필요한 렌더링을 줄이는 방법을 설명해주세요.", "id": "seed_0110"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/cache", "question": "브라우저 캐시가 동작하는 방식에 대해 설명해주세요.", "id": "seed_0111"}
+{"category": "프론트엔드", "question_type": "직무 전문", "topic_tag": "frontend/pwa", "question": "PWA(Progressive Web App)가 무엇이며 어떤 장점이 있는지 설명해주세요.", "id": "seed_0112"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "frontend/user-feedback", "question": "사용자 피드백이 부정적일 때 어떤 방식으로 대응할지 설명해주세요.", "id": "seed_0113"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "deep-learning/regularization", "question": "Regularization이 무엇이며 왜 필요한지 설명해주세요.", "id": "seed_0114"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/supervised-unsupervised", "question": "지도학습(Supervised Learning)과 비지도학습(Unsupervised Learning)의 차이를 설명해주세요.", "id": "seed_0115"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "llm/context-window", "question": "LLM의 Context Window가 무엇이며 왜 중요한지 설명해주세요.", "id": "seed_0116"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "infra/disaster-recovery", "question": "Disaster Recovery 전략이 왜 필요한지 설명해주세요.", "id": "seed_0117"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/ssl-tls", "question": "SSL/TLS가 무엇이며 HTTPS에서 어떤 역할을 하는지 설명해주세요.", "id": "seed_0118"}
+{"category": "인프라·DevOps", "question_type": "직무 전문", "topic_tag": "docker/volume", "question": "Docker Volume을 사용하는 이유를 설명해주세요.", "id": "seed_0119"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "ops/postmortem", "question": "장애 대응 이후 Postmortem 문화를 운영하는 이유를 설명해주세요.", "id": "seed_0120"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "algorithm/hash", "question": "해시 테이블(Hash Table)의 동작 원리와 충돌(Collision) 해결 방법을 설명해주세요.", "id": "seed_0121"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "algorithm/sorting", "question": "퀵 정렬(Quick Sort)과 병합 정렬(Merge Sort)의 차이를 설명해주세요.", "id": "seed_0122"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/context-switching", "question": "Context Switching이 무엇이며 왜 비용이 발생하는지 설명해주세요.", "id": "seed_0123"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/paging", "question": "페이징(Paging)이 무엇이며 가상 메모리와 어떤 관계가 있는지 설명해주세요.", "id": "seed_0124"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/nosql", "question": "RDBMS와 NoSQL의 차이를 설명하고 각각 적합한 상황을 말해주세요.", "id": "seed_0125"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/sharding", "question": "샤딩(Sharding)이 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0126"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/websocket", "question": "WebSocket과 HTTP 통신의 차이를 설명해주세요.", "id": "seed_0127"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/proxy", "question": "Forward Proxy와 Reverse Proxy의 차이를 설명해주세요.", "id": "seed_0128"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/synchronization", "question": "뮤텍스(Mutex)와 세마포어(Semaphore)의 차이를 설명해주세요.", "id": "seed_0129"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "database/query-optimization", "question": "쿼리 최적화(Query Optimization)가 무엇이며 왜 중요한지 설명해주세요.", "id": "seed_0130"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "network/tls-handshake", "question": "TLS Handshake 과정에 대해 설명해주세요.", "id": "seed_0131"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "algorithm/bfs-dfs", "question": "BFS와 DFS의 차이를 설명하고 각각 어떤 상황에서 사용하는지 말해주세요.", "id": "seed_0132"}
+{"category": "백엔드", "question_type": "CS 기초", "topic_tag": "os/cpu-scheduling", "question": "CPU 스케줄링 알고리즘의 종류와 특징을 설명해주세요.", "id": "seed_0133"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "spring/aop", "question": "Spring AOP가 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0134"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "java/concurrency", "question": "Java에서 동시성 문제를 해결하기 위한 방법을 설명해주세요.", "id": "seed_0135"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "cache/cache-invalidation", "question": "캐시 무효화(Cache Invalidation)가 어려운 이유와 해결 방법을 설명해주세요.", "id": "seed_0136"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "msa/distributed-transaction", "question": "MSA 환경에서 분산 트랜잭션을 어떻게 처리할 수 있는지 설명해주세요.", "id": "seed_0137"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "security/jwt", "question": "JWT(Json Web Token)의 구조와 장단점을 설명해주세요.", "id": "seed_0138"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/optimistic-lock", "question": "낙관적 락(Optimistic Lock)과 비관적 락(Pessimistic Lock)의 차이를 설명해주세요.", "id": "seed_0139"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "spring/filter-interceptor", "question": "Spring Filter와 Interceptor의 차이를 설명해주세요.", "id": "seed_0140"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "api/rate-limit", "question": "API Rate Limiting이 필요한 이유와 구현 방법을 설명해주세요.", "id": "seed_0141"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "database/batch-processing", "question": "대량 데이터 처리 시 Batch Processing을 어떻게 설계할지 설명해주세요.", "id": "seed_0142"}
+{"category": "백엔드", "question_type": "직무 전문", "topic_tag": "testing/integration-test", "question": "단위 테스트(Unit Test)와 통합 테스트(Integration Test)의 차이를 설명해주세요.", "id": "seed_0143"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/technical-debt", "question": "기술 부채(Technical Debt)가 누적된 상황에서 어떤 기준으로 개선 우선순위를 정할지 설명해주세요.", "id": "seed_0144"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/api-design", "question": "프론트엔드 팀과 API 명세 협업 과정에서 의견 충돌이 발생하면 어떻게 해결할지 설명해주세요.", "id": "seed_0145"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "troubleshooting/performance", "question": "운영 중인 서비스의 응답 속도가 갑자기 느려졌을 때 어떤 방식으로 원인을 분석할지 설명해주세요.", "id": "seed_0146"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/code-quality", "question": "빠른 기능 개발 요구와 코드 품질 유지 사이에서 어떻게 균형을 맞출지 설명해주세요.", "id": "seed_0147"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/legacy-system", "question": "레거시 시스템을 유지보수하면서 신규 기능도 동시에 개발해야 하는 상황에서 어떻게 접근할지 설명해주세요.", "id": "seed_0148"}
+{"category": "백엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "incident/database-failure", "question": "데이터베이스 장애로 서비스가 중단된 상황에서 어떤 순서로 대응할지 설명해주세요.", "id": "seed_0149"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "javascript/execution-context", "question": "JavaScript의 실행 컨텍스트(Execution Context)에 대해 설명해주세요.", "id": "seed_0150"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/dom-bom", "question": "DOM과 BOM의 차이를 설명해주세요.", "id": "seed_0151"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "web/csrf", "question": "CSRF 공격이 무엇이며 이를 방어하는 방법을 설명해주세요.", "id": "seed_0152"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "web/xss", "question": "XSS 공격이 무엇이며 이를 방어하는 방법을 설명해주세요.", "id": "seed_0153"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "javascript/debounce-throttle", "question": "Debounce와 Throttle의 차이를 설명해주세요.", "id": "seed_0154"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/event-delegation", "question": "이벤트 위임(Event Delegation)이 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0155"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "http/http-method", "question": "HTTP Method(GET, POST, PUT, DELETE)의 특징과 차이를 설명해주세요.", "id": "seed_0156"}
+{"category": "프론트엔드", "question_type": "CS 기초", "topic_tag": "browser/same-origin-policy", "question": "Same-Origin Policy가 무엇이며 왜 필요한지 설명해주세요.", "id": "seed_0157"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/ui-change", "question": "디자인 시안이 개발 도중 크게 변경되었을 때 어떤 방식으로 대응할지 설명해주세요.", "id": "seed_0158"}
+{"category": "프론트엔드", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "frontend/performance-tradeoff", "question": "새로운 애니메이션 기능이 사용자 경험은 좋지만 성능 저하를 유발한다면 어떻게 의사결정을 할지 설명해주세요.", "id": "seed_0159"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/f1-score", "question": "F1-Score가 무엇이며 어떤 상황에서 중요한 지표인지 설명해주세요.", "id": "seed_0160"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "linear-algebra/vector", "question": "벡터(Vector)와 행렬(Matrix)이 머신러닝에서 어떻게 활용되는지 설명해주세요.", "id": "seed_0161"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "probability/bayes-theorem", "question": "베이즈 정리(Bayes' Theorem)가 무엇이며 머신러닝에서 어떻게 활용되는지 설명해주세요.", "id": "seed_0162"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "optimization/gradient-descent", "question": "Gradient Descent가 무엇이며 모델 학습에서 어떤 역할을 하는지 설명해주세요.", "id": "seed_0163"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "deep-learning/batch-normalization", "question": "Batch Normalization이 필요한 이유를 설명해주세요.", "id": "seed_0164"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/cross-validation", "question": "Cross Validation이 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0165"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/roc-auc", "question": "ROC Curve와 AUC가 무엇인지 설명해주세요.", "id": "seed_0166"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "nlp/word2vec", "question": "Word2Vec이 무엇이며 어떤 아이디어를 기반으로 동작하는지 설명해주세요.", "id": "seed_0167"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "deep-learning/dropout", "question": "Dropout이 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0168"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/data-leakage", "question": "데이터 누수(Data Leakage)가 무엇이며 왜 문제가 되는지 설명해주세요.", "id": "seed_0169"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/ensemble", "question": "앙상블(Ensemble) 기법이 무엇이며 왜 성능 향상에 도움이 되는지 설명해주세요.", "id": "seed_0170"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "optimization/learning-rate", "question": "Learning Rate가 너무 크거나 작을 때 어떤 문제가 발생하는지 설명해주세요.", "id": "seed_0171"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "linear-algebra/dimension", "question": "차원의 저주(Curse of Dimensionality)가 무엇인지 설명해주세요.", "id": "seed_0172"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "probability/softmax", "question": "Softmax 함수가 무엇이며 다중 분류 문제에서 왜 사용하는지 설명해주세요.", "id": "seed_0173"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "deep-learning/rnn", "question": "RNN(Recurrent Neural Network)이 무엇이며 어떤 한계가 있는지 설명해주세요.", "id": "seed_0174"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "statistics/standardization-normalization", "question": "데이터 표준화(Standardization)와 정규화(Normalization)의 차이를 설명해주세요.", "id": "seed_0175"}
+{"category": "데이터·AI/ML", "question_type": "CS 기초", "topic_tag": "ml/hyperparameter", "question": "하이퍼파라미터(Hyperparameter)와 모델 파라미터(Parameter)의 차이를 설명해주세요.", "id": "seed_0176"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "mlops/model-versioning", "question": "모델 버전 관리(Model Versioning)가 왜 중요한지 설명해주세요.", "id": "seed_0177"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "mlops/feature-store", "question": "Feature Store가 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0178"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "serving/model-latency", "question": "실시간 모델 서빙에서 지연 시간(Latency)을 줄이는 방법을 설명해주세요.", "id": "seed_0179"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "vector-db/similarity-search", "question": "벡터 데이터베이스(Vector DB)가 무엇이며 왜 LLM 시스템에서 많이 사용하는지 설명해주세요.", "id": "seed_0180"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "pipeline/etl", "question": "ETL 파이프라인이 무엇이며 데이터 엔지니어링에서 어떤 역할을 하는지 설명해주세요.", "id": "seed_0181"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "experimentation/ab-test", "question": "A/B 테스트를 설계할 때 고려해야 할 요소를 설명해주세요.", "id": "seed_0182"}
+{"category": "데이터·AI/ML", "question_type": "직무 전문", "topic_tag": "mlops/model-monitoring", "question": "운영 중인 머신러닝 모델을 모니터링해야 하는 이유를 설명해주세요.", "id": "seed_0183"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/data-conflict", "question": "데이터 분석 결과가 다른 팀의 기대와 다르게 나왔을 때 어떻게 커뮤니케이션할지 설명해주세요.", "id": "seed_0184"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/model-interpretability", "question": "모델 성능은 높지만 해석 가능성이 낮은 상황에서 어떤 선택을 할지 설명해주세요.", "id": "seed_0185"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "incident/data-drift", "question": "운영 중 데이터 드리프트(Data Drift)가 발생했다고 판단되면 어떤 방식으로 대응할지 설명해주세요.", "id": "seed_0186"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/model-release", "question": "모델 성능은 충분하지만 운영 안정성 검증이 부족한 상황에서 배포 여부를 어떻게 판단할지 설명해주세요.", "id": "seed_0187"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/data-labeling", "question": "라벨 품질이 일정하지 않은 데이터셋을 받았을 때 어떤 방식으로 문제를 해결할지 설명해주세요.", "id": "seed_0188"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "ethics/privacy", "question": "사용자 개인정보가 포함된 데이터를 학습에 활용해야 하는 상황에서 어떤 점을 고려해야 하는지 설명해주세요.", "id": "seed_0189"}
+{"category": "데이터·AI/ML", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/reproducibility", "question": "실험 재현성(Reproducibility)이 왜 중요하다고 생각하는지 설명해주세요.", "id": "seed_0190"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "os/virtual-memory", "question": "가상 메모리(Virtual Memory)가 무엇이며 왜 필요한지 설명해주세요.", "id": "seed_0191"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "storage/raid", "question": "RAID의 종류와 각각의 특징을 설명해주세요.", "id": "seed_0192"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "virtualization/hypervisor", "question": "하이퍼바이저(Hypervisor)가 무엇이며 어떤 역할을 하는지 설명해주세요.", "id": "seed_0193"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "network/subnet", "question": "서브넷(Subnet)이 무엇이며 왜 사용하는지 설명해주세요.", "id": "seed_0194"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "storage/object-storage", "question": "Object Storage와 File Storage의 차이를 설명해주세요.", "id": "seed_0195"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "os/io-bottleneck", "question": "I/O Bottleneck이 무엇이며 어떤 상황에서 발생하는지 설명해주세요.", "id": "seed_0196"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "security/vpn", "question": "VPN이 무엇이며 어떤 상황에서 사용하는지 설명해주세요.", "id": "seed_0197"}
+{"category": "인프라·DevOps", "question_type": "CS 기초", "topic_tag": "virtualization/container-orchestration", "question": "컨테이너 오케스트레이션(Container Orchestration)이 필요한 이유를 설명해주세요.", "id": "seed_0198"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/oncall", "question": "온콜(On-call) 운영 문화에서 가장 중요하다고 생각하는 요소를 설명해주세요.", "id": "seed_0199"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "incident/capacity-planning", "question": "트래픽 급증으로 서버 자원이 부족해질 것으로 예상될 때 어떤 방식으로 대응할지 설명해주세요.", "id": "seed_0200"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "collaboration/security-patch", "question": "긴급 보안 패치 적용이 필요한 상황에서 서비스 안정성과 어떻게 균형을 맞출지 설명해주세요.", "id": "seed_0201"}
+{"category": "인프라·DevOps", "question_type": "IT 맥락 인성·사고방식", "topic_tag": "team/automation-priority", "question": "반복 작업 자동화와 신규 인프라 구축 작업 중 우선순위를 어떻게 판단할지 설명해주세요.", "id": "seed_0202"}

@@ -1,0 +1,120 @@
+# 합성 데이터 생성 설정
+# Phase 1 목표: 총 2,000건 (양보다 질)
+
+general:
+  seed: 42
+  total_samples: 2000
+  output_dir: data/processed
+  raw_dir: data/raw
+  seeds_dir: data/seeds
+
+# ── 직군 분포 ────────────────────────────────────────────
+roles:
+  backend:
+    label: "백엔드"
+    ratio: 0.30
+    count: 600
+  frontend:
+    label: "프론트엔드"
+    ratio: 0.20
+    count: 400
+  data_ai:
+    label: "데이터·AI/ML"
+    ratio: 0.30
+    count: 600
+  infra_devops:
+    label: "인프라·DevOps"
+    ratio: 0.20
+    count: 400
+
+# ── 질문 카테고리 분포 ──────────────────────────────────
+categories:
+  cs_fundamentals:
+    label: "CS 기초"
+    ratio: 0.40
+    topics:
+      - "자료구조"
+      - "알고리즘"
+      - "운영체제"
+      - "네트워크"
+      - "데이터베이스"
+  job_specific:
+    label: "직무 전문"
+    ratio: 0.40
+    # 직군별 topics는 scripts/01_make_seed_questions.py에서 직군에 맞춰 구체화
+  it_context_attitude:
+    label: "IT 맥락 인성·사고방식"
+    ratio: 0.20
+    # 반드시 IT 환경 맥락 포함 (코드 리뷰·기술 의사결정·장애 대응·학습·페어 프로그래밍 등)
+    # 일반 인성 질문(장단점, 10년 후 모습 등) 제외
+    topics:
+      - "코드 리뷰"
+      - "기술 의사결정"
+      - "장애 대응"
+      - "기술 학습"
+      - "페어 프로그래밍"
+      - "기술 부채 관리"
+      - "팀 내 기술 커뮤니케이션"
+
+# ── 점수 등급 분포 (균등 강제) ─────────────────────────
+score_bands:
+  low:
+    label: "1-3"
+    min: 1
+    max: 3
+    ratio: 0.25
+    count: 500
+  mid_low:
+    label: "4-6"
+    min: 4
+    max: 6
+    ratio: 0.25
+    count: 500
+  mid_high:
+    label: "7-8"
+    min: 7
+    max: 8
+    ratio: 0.25
+    count: 500
+  high:
+    label: "9-10"
+    min: 9
+    max: 10
+    ratio: 0.25
+    count: 500
+
+# ── GPT-4o API 설정 ────────────────────────────────────
+openai:
+  model: "gpt-4o"
+  temperature: 0.9          # 다양성 확보
+  max_tokens_qa: 1000       # QA 쌍 생성
+  max_tokens_eval: 800      # 평가지 생성
+  requests_per_minute: 500
+  max_retries: 5
+  retry_wait_min: 1
+  retry_wait_max: 10
+
+# ── 답변 길이 제한 ─────────────────────────────────────
+answer_length:
+  min_chars: 200            # 최소 200자 (한글)
+  max_chars: 500            # 최대 500자 (한글)
+
+# ── 전처리 필터 ────────────────────────────────────────
+filters:
+  max_tokens: 1800          # 이 초과 샘플은 제거 (T4 OOM 방지)
+  require_valid_json: true
+  required_output_fields:
+    - "reasoning"
+    - "overall_score"
+    - "strengths"
+    - "improvements"
+
+# ── 시드 질문 설정 ─────────────────────────────────────
+seed_questions:
+  total: 200
+  # 직군별 시드 질문 수 (총 200개)
+  per_role:
+    backend: 60
+    frontend: 40
+    data_ai: 60
+    infra_devops: 40
