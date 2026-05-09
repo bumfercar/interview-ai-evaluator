@@ -19,6 +19,7 @@ Unsloth's train_on_responses_only helper for that masking.
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 import random
 from pathlib import Path
@@ -252,28 +253,31 @@ def run_training(config: dict[str, Any]) -> None:
     train_dataset = Dataset.from_list(prepare_text_rows(train_rows, tokenizer))
     val_dataset = Dataset.from_list(prepare_text_rows(val_rows, tokenizer))
 
-    args = TrainingArguments(
-        output_dir=output_cfg["dir"],
-        logging_dir=output_cfg["logging_dir"],
-        per_device_train_batch_size=int(train_cfg["per_device_train_batch_size"]),
-        per_device_eval_batch_size=int(train_cfg["per_device_eval_batch_size"]),
-        gradient_accumulation_steps=int(train_cfg["gradient_accumulation_steps"]),
-        num_train_epochs=float(train_cfg["num_train_epochs"]),
-        learning_rate=float(train_cfg["learning_rate"]),
-        warmup_ratio=float(train_cfg["warmup_ratio"]),
-        weight_decay=float(train_cfg["weight_decay"]),
-        lr_scheduler_type=train_cfg["lr_scheduler_type"],
-        optim=train_cfg["optim"],
-        fp16=bool(train_cfg["fp16"]),
-        bf16=bool(train_cfg["bf16"]),
-        logging_steps=int(train_cfg["logging_steps"]),
-        evaluation_strategy="steps",
-        eval_steps=int(train_cfg["eval_steps"]),
-        save_steps=int(train_cfg["save_steps"]),
-        save_total_limit=int(train_cfg["save_total_limit"]),
-        report_to=train_cfg["report_to"],
-        seed=int(train_cfg["seed"]),
-    )
+    training_args_kwargs = {
+        "output_dir": output_cfg["dir"],
+        "logging_dir": output_cfg["logging_dir"],
+        "per_device_train_batch_size": int(train_cfg["per_device_train_batch_size"]),
+        "per_device_eval_batch_size": int(train_cfg["per_device_eval_batch_size"]),
+        "gradient_accumulation_steps": int(train_cfg["gradient_accumulation_steps"]),
+        "num_train_epochs": float(train_cfg["num_train_epochs"]),
+        "learning_rate": float(train_cfg["learning_rate"]),
+        "warmup_ratio": float(train_cfg["warmup_ratio"]),
+        "weight_decay": float(train_cfg["weight_decay"]),
+        "lr_scheduler_type": train_cfg["lr_scheduler_type"],
+        "optim": train_cfg["optim"],
+        "fp16": bool(train_cfg["fp16"]),
+        "bf16": bool(train_cfg["bf16"]),
+        "logging_steps": int(train_cfg["logging_steps"]),
+        "eval_steps": int(train_cfg["eval_steps"]),
+        "save_steps": int(train_cfg["save_steps"]),
+        "save_total_limit": int(train_cfg["save_total_limit"]),
+        "report_to": train_cfg["report_to"],
+        "seed": int(train_cfg["seed"]),
+    }
+    training_args_params = inspect.signature(TrainingArguments.__init__).parameters
+    strategy_key = "eval_strategy" if "eval_strategy" in training_args_params else "evaluation_strategy"
+    training_args_kwargs[strategy_key] = "steps"
+    args = TrainingArguments(**training_args_kwargs)
 
     trainer = SFTTrainer(
         model=model,
