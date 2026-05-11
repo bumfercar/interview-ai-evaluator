@@ -34,6 +34,23 @@ DEFAULT_MODEL = "Qwen/Qwen2.5-7B-Instruct"
 DEFAULT_TEST = Path("data/splits/test.jsonl")
 DEFAULT_OUTPUT = Path("data/eval/predictions.jsonl")
 REQUIRED_OUTPUT_FIELDS = ["reasoning", "overall_score", "strengths", "improvements"]
+STRICT_OUTPUT_CONTRACT = """
+
+출력 규칙:
+- 반드시 JSON 객체 하나만 출력하세요.
+- Markdown 코드블록, 설명 문장, 추가 텍스트를 출력하지 마세요.
+- JSON 필드는 반드시 reasoning, overall_score, strengths, improvements만 사용하세요.
+- overall_score는 1부터 10까지의 정수 하나로 채점하세요.
+- strengths와 improvements는 각각 문자열 배열로 출력하세요.
+
+출력 형식:
+{
+  "reasoning": "점수를 판단한 핵심 이유",
+  "overall_score": 7,
+  "strengths": ["장점 1", "장점 2"],
+  "improvements": ["개선점 1", "개선점 2"]
+}
+""".strip()
 
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -64,9 +81,13 @@ def build_user_content(sample: dict[str, Any]) -> str:
     )
 
 
+def build_system_content(sample: dict[str, Any]) -> str:
+    return f"{sample['instruction'].strip()}\n\n{STRICT_OUTPUT_CONTRACT}"
+
+
 def build_prompt(sample: dict[str, Any], tokenizer: Any) -> str:
     messages = [
-        {"role": "system", "content": sample["instruction"].strip()},
+        {"role": "system", "content": build_system_content(sample)},
         {"role": "user", "content": build_user_content(sample)},
     ]
     return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
