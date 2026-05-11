@@ -1,0 +1,60 @@
+# SFT training config for Qwen2.5-7B-Instruct + Unsloth LoRA.
+# Intended primary runtime: Colab T4 16GB.
+
+model:
+  name: "Qwen/Qwen2.5-7B-Instruct"
+  max_seq_length: 1024
+  dtype: null
+  load_in_4bit: true
+
+data:
+  train_path: "data/debiased/splits/train.jsonl"
+  val_path: "data/debiased/splits/val.jsonl"
+  test_path: "data/debiased/splits/test.jsonl"
+  text_field: "text"
+  max_train_samples: null
+  max_val_samples: null
+
+output:
+  dir: "models/lora_adapters/qwen2_5_7b_sft_debiased"
+  logging_dir: "models/lora_adapters/qwen2_5_7b_sft_debiased/logs"
+
+lora:
+  r: 16
+  alpha: 16
+  dropout: 0.0
+  bias: "none"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  use_gradient_checkpointing: "unsloth"
+  random_state: 42
+
+training:
+  seed: 42
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+  gradient_accumulation_steps: 4
+  num_train_epochs: 1
+  learning_rate: 0.0002
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  lr_scheduler_type: "cosine"
+  optim: "adamw_8bit"
+  fp16: true
+  bf16: false
+  logging_steps: 10
+  eval_steps: 100
+  save_steps: 100
+  save_total_limit: 3
+  report_to: "none"
+
+generation_check:
+  enabled: true
+  sample_count: 5
+  max_new_tokens: 512
